@@ -81,6 +81,33 @@ MonoBehaviour:
   - wood
   - stairs
   Exists: 1
+--- !u!114 &-4631620352338590152
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/amb/door_open
+  m_EditorClassIdentifier: FMODUnityEditor::FMODUnity.EditorEventRef
+  Path: event:/amb/door_open
+  Guid:
+    Data1: 1278774083
+    Data2: 1106543542
+    Data3: 1840707481
+    Data4: -1078719127
+  Banks:
+  - {fileID: -2909388600300997874}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 872
 --- !u!114 &-4358329237426832430
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -123,11 +150,38 @@ MonoBehaviour:
   Path: ../../../Downloads/Projekt FMOD-20260428T151253Z-3-001/Projekt FMOD/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 639129932696673056
+  lastModified: 639142040287590593
   FileSizes:
   - Name: Desktop
-    Value: 5950720
+    Value: 5975392
   Exists: 1
+--- !u!114 &-2786736840235123271
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: snapshot:/Outside
+  m_EditorClassIdentifier: FMODUnityEditor::FMODUnity.EditorEventRef
+  Path: snapshot:/Outside
+  Guid:
+    Data1: -30644139
+    Data2: 1312838907
+    Data3: -1725198161
+    Data4: 73930870
+  Banks:
+  - {fileID: -2909388600300997874}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 0
 --- !u!114 &-2515863403147778953
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -143,10 +197,10 @@ MonoBehaviour:
   Path: ../../../Downloads/Projekt FMOD-20260428T151253Z-3-001/Projekt FMOD/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 639129932696683459
+  lastModified: 639142040287600648
   FileSizes:
   - Name: Desktop
-    Value: 1044
+    Value: 1308
   Exists: 1
 --- !u!114 &-1876533210986666243
 MonoBehaviour:
@@ -223,13 +277,16 @@ MonoBehaviour:
   - {fileID: 5535285029550629213}
   - {fileID: -4358329237426832430}
   - {fileID: -1876533210986666243}
+  - {fileID: -4631620352338590152}
+  - {fileID: -2786736840235123271}
+  - {fileID: 1285496183730212789}
   EditorParameters: []
   MasterBanks:
   - {fileID: -2909388600300997874}
   StringsBanks:
   - {fileID: -2515863403147778953}
   cacheVersion: 131859
-  cacheTime: 639129932696683459
+  cacheTime: 639142040287600648
   SerializableEventsDict:
   - key: event:/amb/amb_forest
     index: 0
@@ -241,6 +298,39 @@ MonoBehaviour:
     index: 3
   - key: event:/amb/amb_fire
     index: 4
+  - key: event:/amb/door_open
+    index: 5
+  - key: snapshot:/Outside
+    index: 6
+  - key: event:/amb/door_close
+    index: 7
+--- !u!114 &1285496183730212789
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/amb/door_close
+  m_EditorClassIdentifier: FMODUnityEditor::FMODUnity.EditorEventRef
+  Path: event:/amb/door_close
+  Guid:
+    Data1: -1266277972
+    Data2: 1173749147
+    Data3: 32747446
+    Data4: 1390007687
+  Banks:
+  - {fileID: -2909388600300997874}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 1050
 --- !u!114 &3443394505615709168
 MonoBehaviour:
   m_ObjectHideFlags: 0
