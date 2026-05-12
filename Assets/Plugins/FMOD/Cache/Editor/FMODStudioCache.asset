@@ -54,6 +54,33 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 93000
+--- !u!114 &-6185394937543637365
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/steps/player_jump
+  m_EditorClassIdentifier: FMODUnityEditor::FMODUnity.EditorEventRef
+  Path: event:/steps/player_jump
+  Guid:
+    Data1: 578703651
+    Data2: 1167350547
+    Data3: -238588288
+    Data4: 390201158
+  Banks:
+  - {fileID: -2909388600300997874}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 650
 --- !u!114 &-5649406658425365778
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -150,10 +177,10 @@ MonoBehaviour:
   Path: ../../../Downloads/Projekt FMOD-20260428T151253Z-3-001/Projekt FMOD/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 639142040287590593
+  lastModified: 639142113464085109
   FileSizes:
   - Name: Desktop
-    Value: 5975392
+    Value: 6109184
   Exists: 1
 --- !u!114 &-2786736840235123271
 MonoBehaviour:
@@ -197,10 +224,10 @@ MonoBehaviour:
   Path: ../../../Downloads/Projekt FMOD-20260428T151253Z-3-001/Projekt FMOD/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 639142040287600648
+  lastModified: 639142113464095109
   FileSizes:
   - Name: Desktop
-    Value: 1308
+    Value: 1570
   Exists: 1
 --- !u!114 &-1876533210986666243
 MonoBehaviour:
@@ -229,6 +256,34 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 93000
+--- !u!114 &-220779912572086240
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/steps/player_land
+  m_EditorClassIdentifier: FMODUnityEditor::FMODUnity.EditorEventRef
+  Path: event:/steps/player_land
+  Guid:
+    Data1: 668203027
+    Data2: 1257728791
+    Data3: 956771973
+    Data4: 1658674353
+  Banks:
+  - {fileID: -2909388600300997874}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters:
+  - {fileID: 5669202268164794482}
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 450
 --- !u!114 &-68810777226810502
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -280,13 +335,15 @@ MonoBehaviour:
   - {fileID: -4631620352338590152}
   - {fileID: -2786736840235123271}
   - {fileID: 1285496183730212789}
+  - {fileID: -220779912572086240}
+  - {fileID: -6185394937543637365}
   EditorParameters: []
   MasterBanks:
   - {fileID: -2909388600300997874}
   StringsBanks:
   - {fileID: -2515863403147778953}
   cacheVersion: 131859
-  cacheTime: 639142040287600648
+  cacheTime: 639142113464095109
   SerializableEventsDict:
   - key: event:/amb/amb_forest
     index: 0
@@ -304,6 +361,10 @@ MonoBehaviour:
     index: 6
   - key: event:/amb/door_close
     index: 7
+  - key: event:/steps/player_land
+    index: 8
+  - key: event:/steps/player_jump
+    index: 9
 --- !u!114 &1285496183730212789
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -481,6 +542,33 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 365
+--- !u!114 &5669202268164794482
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/player_land/footstep_switch
+  m_EditorClassIdentifier: FMODUnityEditor::FMODUnity.EditorParamRef
+  Name: footstep_switch
+  StudioPath: 
+  Min: 0
+  Max: 2
+  Default: 0
+  ID:
+    data1: 861266700
+    data2: 2887854831
+  Type: 2
+  IsGlobal: 0
+  Labels:
+  - stone
+  - wood
+  - stairs
+  Exists: 1
 --- !u!114 &7159750767170438670
 MonoBehaviour:
   m_ObjectHideFlags: 0
